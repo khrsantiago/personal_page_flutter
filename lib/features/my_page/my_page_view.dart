@@ -20,26 +20,24 @@ class MyPageView extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            // Principal
+            // _home(),
+
+            // Acerca de mi
             _aboutMe(),
-            // Container(
-            //   height: state.height,
-            //   color: Colors.green,
-            // ),
-            // Container(
-            //   height: state.height,
-            //   color: Colors.yellow,
-            // ),
-            // Container(
-            //   height: state.height,
-            //   color: Colors.red,
-            // ),
+
+            // Trabajos / Portafolio
+            // _work(),
+
+            // Contacto
+            // _contact(),
           ],
         ),
       ),
     );
   }
 
-  Widget _aboutMe() {
+  Widget _home() {
     return Container(
       height: state.height,
       decoration: BoxDecoration(
@@ -171,6 +169,32 @@ class MyPageView extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _aboutMe() {
+    // -- Descripción
+    // -- Herramientas
+    // -- Conociminetos
+    // -- Estudios
+
+    return Container(
+      height: state.height,
+      color: Colors.grey.shade800,
+    );
+  }
+
+  Widget _work() {
+    return Container(
+      height: state.height,
+      color: Colors.grey.shade700,
+    );
+  }
+
+  Widget _contact() {
+    return Container(
+      height: state.height,
+      color: Colors.grey.shade600,
     );
   }
 }
